@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=, initial-scale=1.0" />
+	<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+	<link rel="stylesheet" href="css/rs-style.css" />
+	<title>Buro 13 - Главная</title>
+</head>
+
+<body>
+
+	<div class="wrapper">
+
+		<link rel="stylesheet" href="css/rs-header.css" />
+		<script src="js/rs-header.js" defer></script>
+		<header>
+			<div class="rs-header">
+				<div class="rs-header__container">
+					<div class="rs-header__wrapper">
+						<div class="rs-header__search search">
+							<div class="search__block">
+								<div class="search__wrapper">
+									<form action="#" class="search__form">
+										<div class="search__line">
+											<button class="search__btn search__submit" type="submit">
+												<svg width="17" height="17" viewBox="0 0 17 17" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M7 13C10.3137 13 13 10.3137 13 7C13 3.68629 10.3137 1 7 1C3.68629 1 1 3.68629 1 7C1 10.3137 3.68629 13 7 13Z"
+														stroke="#333333" stroke-width="0.984825" stroke-miterlimit="10"
+														stroke-linecap="round" stroke-linejoin="round" />
+													<path d="M16 16L12 12" stroke="#333333" stroke-width="0.984825"
+														stroke-miterlimit="10" stroke-linecap="round"
+														stroke-linejoin="round" />
+												</svg>
+											</button>
+											<input type="text" placeholder="Найти ..." class="search__input" required />
+											<button class="search__btn search__clear" type="button">
+												<svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+													<path
+														d="M12.7342 1.2749C12.65 1.19052 12.55 1.12358 12.4399 1.0779C12.3298 1.03223 12.2117 1.00872 12.0925 1.00872C11.9733 1.00872 11.8553 1.03223 11.7452 1.0779C11.6351 1.12358 11.535 1.19052 11.4508 1.2749L7 5.71663L2.54916 1.26579C2.4649 1.18153 2.36486 1.11468 2.25476 1.06908C2.14466 1.02347 2.02665 1 1.90748 1C1.78831 1 1.6703 1.02347 1.5602 1.06908C1.4501 1.11468 1.35006 1.18153 1.26579 1.26579C1.18153 1.35006 1.11468 1.4501 1.06908 1.5602C1.02347 1.6703 1 1.78831 1 1.90748C1 2.02665 1.02347 2.14466 1.06908 2.25476C1.11468 2.36486 1.18153 2.4649 1.26579 2.54916L5.71663 7L1.26579 11.4508C1.18153 11.5351 1.11468 11.6351 1.06908 11.7452C1.02347 11.8553 1 11.9733 1 12.0925C1 12.2117 1.02347 12.3297 1.06908 12.4398C1.11468 12.5499 1.18153 12.6499 1.26579 12.7342C1.35006 12.8185 1.4501 12.8853 1.5602 12.9309C1.6703 12.9765 1.78831 13 1.90748 13C2.02665 13 2.14466 12.9765 2.25476 12.9309C2.36486 12.8853 2.4649 12.8185 2.54916 12.7342L7 8.28337L11.4508 12.7342C11.5351 12.8185 11.6351 12.8853 11.7452 12.9309C11.8553 12.9765 11.9733 13 12.0925 13C12.2117 13 12.3297 12.9765 12.4398 12.9309C12.5499 12.8853 12.6499 12.8185 12.7342 12.7342C12.8185 12.6499 12.8853 12.5499 12.9309 12.4398C12.9765 12.3297 13 12.2117 13 12.0925C13 11.9733 12.9765 11.8553 12.9309 11.7452C12.8853 11.6351 12.8185 11.5351 12.7342 11.4508L8.28337 7L12.7342 2.54916C13.0801 2.20329 13.0801 1.62077 12.7342 1.2749Z"
+														fill="#333333" />
+												</svg>
+											</button>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+
+						<div class="rs-header__logo">
+							<a href="#">
+								<img src="./img/header/logo.svg" alt="">
+							</a>
+						</div>
+
+						<div class="rs-header__menu menu">
+							<button type="button" class="menu__icon icon-menu">
+								<svg class="menu__icon-burger" width="17" height="11" viewBox="0 0 17 11" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<rect width="17" height="1" fill="black" />
+									<rect y="5" width="17" height="1" fill="black" />
+									<rect y="10" width="17" height="1" fill="black" />
+								</svg>
+								<span class="menu__icon-text">
+									<span>Меню</span>
+									<span>Закрыть</span>
+								</span>
+							</button>
+
+							<div class="menu__block">
+								<nav class="menu__body">
+									<ul class="menu__list">
+										<li class="menu-item current_menu_item">
+											<a href="#">Главная</a>
+										</li>
+
+										<li class="menu-item menu__dropdown">
+											<a href="#">Каталог украшений</a>
+
+											<ul class="menu__dropdown_list" hidden>
+												<li class="menu-item">
+													<a href="#">Серьги</a>
+												</li>
+
+												<li class="menu-item">
+													<a href="#">Подвески</a>
+												</li>
+
+												<li class="menu-item">
+													<a href="#">Кольца</a>
+												</li>
+
+												<li class="menu-item">
+													<a href="#">Браслеты</a>
+												</li>
+
+												<li class="menu-item">
+													<a href="#">Броши</a>
+												</li>
+
+												<li class="menu-item">
+													<a href="#">Чокеры</a>
+												</li>
+
+												<li class="menu-item">
+													<a href="#">Каффы/клипсы</a>
+												</li>
+
+												<li class="menu-item">
+													<a href="#">Заколки</a>
+												</li>
+
+												<li class="menu-item">
+													<a href="#">Эксклюзив</a>
+												</li>
+
+												<li class="menu-item">
+													<a href="#">Цепи</a>
+												</li>
+
+												<li class="menu-item">
+													<a href="#">Колье</a>
+												</li>
+											</ul>
+										</li>
+
+										<li class="menu-item">
+											<a href="#">Коллекции Buro13</a>
+										</li>
+									</ul>
+								</nav>
+
+								<div class="rs-header__logo">
+									<a href="#">
+										<img src="./img/header/logo.svg" alt="">
+									</a>
+								</div>
+
+								<nav class="menu__body">
+									<ul class="menu__list">
+										<li class="menu-item">
+											<a href="#">О магазине</a>
+										</li>
+
+										<li class="menu-item">
+											<a href="#">Новости</a>
+										</li>
+
+										<li class="menu-item">
+											<a href="#">Доставка</a>
+										</li>
+
+										<li class="menu-item">
+											<a href="#">Контакты</a>
+										</li>
+									</ul>
+								</nav>
+
+								<div class="rs-header__search search">
+									<div class="search__block">
+										<div class="search__wrapper">
+											<form action="#" class="search__form">
+												<div class="search__line">
+													<button class="search__btn search__submit" type="submit">
+														<svg width="17" height="17" viewBox="0 0 17 17" fill="none"
+															xmlns="http://www.w3.org/2000/svg">
+															<path
+																d="M7 13C10.3137 13 13 10.3137 13 7C13 3.68629 10.3137 1 7 1C3.68629 1 1 3.68629 1 7C1 10.3137 3.68629 13 7 13Z"
+																stroke="#333333" stroke-width="0.984825"
+																stroke-miterlimit="10" stroke-linecap="round"
+																stroke-linejoin="round" />
+															<path d="M16 16L12 12" stroke="#333333"
+																stroke-width="0.984825" stroke-miterlimit="10"
+																stroke-linecap="round" stroke-linejoin="round" />
+														</svg>
+													</button>
+													<input type="text" placeholder="Найти ..." class="search__input"
+														required />
+													<button class="search__btn search__clear" type="button">
+														<svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+															<path
+																d="M12.7342 1.2749C12.65 1.19052 12.55 1.12358 12.4399 1.0779C12.3298 1.03223 12.2117 1.00872 12.0925 1.00872C11.9733 1.00872 11.8553 1.03223 11.7452 1.0779C11.6351 1.12358 11.535 1.19052 11.4508 1.2749L7 5.71663L2.54916 1.26579C2.4649 1.18153 2.36486 1.11468 2.25476 1.06908C2.14466 1.02347 2.02665 1 1.90748 1C1.78831 1 1.6703 1.02347 1.5602 1.06908C1.4501 1.11468 1.35006 1.18153 1.26579 1.26579C1.18153 1.35006 1.11468 1.4501 1.06908 1.5602C1.02347 1.6703 1 1.78831 1 1.90748C1 2.02665 1.02347 2.14466 1.06908 2.25476C1.11468 2.36486 1.18153 2.4649 1.26579 2.54916L5.71663 7L1.26579 11.4508C1.18153 11.5351 1.11468 11.6351 1.06908 11.7452C1.02347 11.8553 1 11.9733 1 12.0925C1 12.2117 1.02347 12.3297 1.06908 12.4398C1.11468 12.5499 1.18153 12.6499 1.26579 12.7342C1.35006 12.8185 1.4501 12.8853 1.5602 12.9309C1.6703 12.9765 1.78831 13 1.90748 13C2.02665 13 2.14466 12.9765 2.25476 12.9309C2.36486 12.8853 2.4649 12.8185 2.54916 12.7342L7 8.28337L11.4508 12.7342C11.5351 12.8185 11.6351 12.8853 11.7452 12.9309C11.8553 12.9765 11.9733 13 12.0925 13C12.2117 13 12.3297 12.9765 12.4398 12.9309C12.5499 12.8853 12.6499 12.8185 12.7342 12.7342C12.8185 12.6499 12.8853 12.5499 12.9309 12.4398C12.9765 12.3297 13 12.2117 13 12.0925C13 11.9733 12.9765 11.8553 12.9309 11.7452C12.8853 11.6351 12.8185 11.5351 12.7342 11.4508L8.28337 7L12.7342 2.54916C13.0801 2.20329 13.0801 1.62077 12.7342 1.2749Z"
+																fill="#333333" />
+														</svg>
+													</button>
+												</div>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<a href="#" class="rs-header__cart">
+							<svg width="18" height="17" viewBox="0 0 18 17" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M14.8404 4.26977H12.0606C11.7935 1.86802 10.2304 0 7.41095 0C4.64097 0 3.07791 1.99651 2.80091 4.26977H0.00124829V16.3279C-0.0086445 16.4465 0.0408195 16.575 0.129855 16.664C0.228783 16.7529 0.357389 16.8023 0.495888 16.8023H14.3359C14.4744 16.8023 14.6129 16.7529 14.7019 16.6541C14.8009 16.5651 14.8404 16.4366 14.8305 16.318L14.8404 4.26977ZM7.41095 0.879651C9.22133 0.879651 10.7646 1.83837 11.0614 4.26977H3.80008C4.10676 1.88779 5.66982 0.879651 7.41095 0.879651ZM1.03999 15.9227V5.14942H2.72177C2.69209 5.56454 2.68219 5.97965 2.68219 6.38488C2.68219 6.63198 2.90973 6.82965 3.17683 6.82965C3.44394 6.82965 3.67147 6.63198 3.67147 6.38488C3.67147 5.94012 3.68137 5.53488 3.71105 5.14942H11.1207C11.1405 5.53488 11.1504 5.94012 11.1504 6.38488C11.1504 6.63198 11.378 6.82965 11.6451 6.82965C11.9221 6.82965 12.1397 6.63198 12.1397 6.38488C12.1397 5.96977 12.1298 5.55465 12.11 5.14942H13.772V15.9227H1.03999Z"
+									fill="#333333" />
+							</svg>
+							<span>Корзина</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main class="page">
+
+			<link rel="stylesheet" href="css/rs-slider.css">
+			<section class="rs-slider">
+				<div class="rs-slider__img" data-aos="fade" data-aos-delay="100">
+					<div class="rs-slider__img_slider swiper">
+						<div class="rs-slider__img_swiper swiper-wrapper">
+							<div class="rs-slider__img_slide swiper-slide">
+								<img src="./img/blocks/slider/slider_1.jpg" alt="">
+								<img src="./img/blocks/slider/slider_1_min.jpg" alt="">
+							</div>
+							<div class="rs-slider__img_slide swiper-slide">
+								<img src="./img/blocks/slider/slider_2.jpg" alt="">
+								<img src="./img/blocks/slider/slider_2_min.jpg" alt="">
+							</div>
+							<div class="rs-slider__img_slide swiper-slide">
+								<img src="./img/blocks/slider/slider_3.jpg" alt="">
+								<img src="./img/blocks/slider/slider_3_min.jpg" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="rs-slider__container">
+					<div class="rs-slider__wrapper">
+						<div class="rs-slider__content" data-aos="fade-left" data-aos-delay="300">
+							<div class="rs-slider__content_slider swiper">
+								<div class="rs-slider__content_swiper swiper-wrapper">
+									<div class="rs-slider__content_slide swiper-slide">
+										<div class="rs-slider__content_body">
+											<h1>Украшения ювелирного качества</h1>
+											<p>Оцените безупречное качество наших изделий, созданных с любовью и
+												вниманием к
+												деталям</p>
+											<div class="rs-slider__content_buttons">
+												<a href="#" class="rs-btn _btn-primary">Перейти в каталог</a>
+											</div>
+										</div>
+									</div>
+
+									<div class="rs-slider__content_slide swiper-slide">
+										<div class="rs-slider__content_body">
+											<h1>Не упустите шанс обновить свою шкатулку</h1>
+											<p>Откройте себя новым стилям, цветам и материалам в уникальном ассортименте
+												модных аксессуаров</p>
+											<div class="rs-slider__content_buttons">
+												<a href="#" class="rs-btn _btn-primary">Перейти в каталог</a>
+											</div>
+										</div>
+									</div>
+
+									<div class="rs-slider__content_slide swiper-slide">
+										<div class="rs-slider__content_body">
+											<h1>Бижутерия на любой выход: новые сочетания с модными акцентами</h1>
+											<p>Добавьте изюминку в свой образ с помощью стильной и актуальной бижутерии
+											</p>
+											<div class="rs-slider__content_buttons">
+												<a href="#" class="rs-btn _btn-primary">Перейти в каталог</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="rs-slider__navigation swiper-navigation">
+							<div class="rs-slider__button-prev swiper-button-prev">
+								<svg width="41" height="33" viewBox="0 0 41 33" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M7.219 11.344L6.203 10.406L0.5 16.031V16.968L6.2 22.593L7.137 21.655L2.606 17.124H40.5V15.874H2.609L7.219 11.344Z"
+										fill="white" />
+									<path
+										d="M7.219 11.344L6.203 10.406L0.5 16.031V16.968L6.2 22.593L7.137 21.655L2.606 17.124H40.5V15.874H2.609L7.219 11.344Z"
+										fill="white" />
+								</svg>
+								<span>Предыдущий</span>
+							</div>
+							<div class="rs-slider__button-next swiper-button-next">
+								<span>Следующий</span>
+								<svg width="41" height="33" viewBox="0 0 41 33" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M33.771 21.656L34.787 22.594L40.49 16.969V16.032L34.79 10.407L33.853 11.345L38.384 15.876H0.48999V17.126H38.381L33.771 21.656Z"
+										fill="white" />
+									<path
+										d="M33.771 21.656L34.787 22.594L40.49 16.969V16.032L34.79 10.407L33.853 11.345L38.384 15.876H0.48999V17.126H38.381L33.771 21.656Z"
+										fill="white" />
+								</svg>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<link rel="stylesheet" href="css/rs-catalog-product.css">
+			<section class="rs-catalog-product">
+				<div class="rs-catalog-product__container">
+					<div class="rs-catalog-product__wrapper">
+						<div class="rs-catalog-product__text" data-aos="fade-right" data-aos-delay="100">
+							<h2>Каталог украшений</h2>
+							<p>Благодаря регулярному пополнению ассортимента в Buro 13, мы можем удовлетворить запросы
+								самых искушённых покупателей.</p>
+							<a href="#" class="rs-btn _btn-primary">весь ассортимент</a>
+						</div>
+
+						<div class="rs-catalog-product__slider swiper" data-aos="fade-left" data-aos-delay="300">
+							<div class="rs-catalog-product__swiper swiper-wrapper">
+								<div class="rs-catalog-product__slide swiper-slide">
+									<div class="rs-catalog-product__item">
+										<a href="#" class="rs-catalog-product__link">
+											<div class="rs-catalog-product__picture">
+												<div class="rs-catalog-product__btn rs-btn _btn-white">
+													в каталог
+												</div>
+												<div class="rs-catalog-product__img">
+													<img src="./img/blocks/catalog/catalog_1.jpg" alt="">
+												</div>
+											</div>
+											<div class="rs-catalog-product__desc">
+												<h5>Серьги</h5>
+											</div>
+										</a>
+									</div>
+								</div>
+
+								<div class="rs-catalog-product__slide swiper-slide">
+									<div class="rs-catalog-product__item">
+										<a href="#" class="rs-catalog-product__link">
+											<div class="rs-catalog-product__picture">
+												<div class="rs-catalog-product__btn rs-btn _btn-white">
+													в каталог
+												</div>
+												<div class="rs-catalog-product__img">
+													<img src="./img/blocks/catalog/catalog_2.jpg" alt="">
+												</div>
+											</div>
+											<div class="rs-catalog-product__desc">
+												<h5>Подвески</h5>
+											</div>
+										</a>
+									</div>
+								</div>
+
+								<div class="rs-catalog-product__slide swiper-slide">
+									<div class="rs-catalog-product__item">
+										<a href="#" class="rs-catalog-product__link">
+											<div class="rs-catalog-product__picture">
+												<div class="rs-catalog-product__btn rs-btn _btn-white">
+													в каталог
+												</div>
+												<div class="rs-catalog-product__img">
+													<img src="./img/blocks/catalog/catalog_3.jpg" alt="">
+												</div>
+											</div>
+											<div class="rs-catalog-product__desc">
+												<h5>Кольца</h5>
+											</div>
+										</a>
+									</div>
+								</div>
+
+								<div class="rs-catalog-product__slide swiper-slide">
+									<div class="rs-catalog-product__item">
+										<a href="#" class="rs-catalog-product__link">
+											<div class="rs-catalog-product__picture">
+												<div class="rs-catalog-product__btn rs-btn _btn-white">
+													в каталог
+												</div>
+												<div class="rs-catalog-product__img">
+													<img src="./img/blocks/catalog/catalog_1.jpg" alt="">
+												</div>
+											</div>
+											<div class="rs-catalog-product__desc">
+												<h5>Серьги</h5>
+											</div>
+										</a>
+									</div>
+								</div>
+
+								<div class="rs-catalog-product__slide swiper-slide">
+									<div class="rs-catalog-product__item">
+										<a href="#" class="rs-catalog-product__link">
+											<div class="rs-catalog-product__picture">
+												<div class="rs-catalog-product__btn rs-btn _btn-white">
+													в каталог
+												</div>
+												<div class="rs-catalog-product__img">
+													<img src="./img/blocks/catalog/catalog_2.jpg" alt="">
+												</div>
+											</div>
+											<div class="rs-catalog-product__desc">
+												<h5>Подвески</h5>
+											</div>
+										</a>
+									</div>
+								</div>
+
+								<div class="rs-catalog-product__slide swiper-slide">
+									<div class="rs-catalog-product__item">
+										<a href="#" class="rs-catalog-product__link">
+											<div class="rs-catalog-product__picture">
+												<div class="rs-catalog-product__btn rs-btn _btn-white">
+													в каталог
+												</div>
+												<div class="rs-catalog-product__img">
+													<img src="./img/blocks/catalog/catalog_3.jpg" alt="">
+												</div>
+											</div>
+											<div class="rs-catalog-product__desc">
+												<h5>Кольца</h5>
+											</div>
+										</a>
+									</div>
+								</div>
+
+								<div class="rs-catalog-product__slide swiper-slide">
+									<div class="rs-catalog-product__item">
+										<a href="#" class="rs-catalog-product__link">
+											<div class="rs-catalog-product__picture">
+												<div class="rs-catalog-product__btn rs-btn _btn-white">
+													в каталог
+												</div>
+												<div class="rs-catalog-product__img">
+													<img src="./img/blocks/catalog/catalog_3.jpg" alt="">
+												</div>
+											</div>
+											<div class="rs-catalog-product__desc">
+												<h5>Кольца</h5>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="rs-catalog-product__pagination swiper-pagination"></div>
+					</div>
+				</div>
+			</section>
+
+			<link rel="stylesheet" href="css/rs-parallax.css">
+			<section class="rs-parallax" style="background-image: url('./img/blocks/parallax/parallax_img-1.jpg');">
+			</section>
+
+			<link rel="stylesheet" href="css/rs-product-slider.css">
+			<section class="rs-product-slider">
+				<div class="rs-product-slider__container">
+					<h2 data-aos="fade-right" data-aos-delay="100">Пользуются популярностью</h2>
+
+					<div class="rs-product-slider__slider swiper" data-aos="fade-left" data-aos-delay="300">
+						<div class="rs-product-slider__swiper swiper-wrapper">
+							<div class="rs-product-slider__slide swiper-slide">
+								<div class="rs-product-slider__item">
+									<a href="#" class="rs-product-slider__link">
+										<div class="rs-product-slider__picture">
+											<div class="rs-product-slider__label">Sale 38%</div>
+											<div class="rs-product-slider__img">
+												<img src="./img/blocks/product/kt_1.jpg" alt="">
+												<img src="./img/blocks/product/kt_1_hover.jpg" alt="">
+											</div>
+										</div>
+										<div class="rs-product-slider__desc">
+											<span>Коллекция Classy</span>
+											<h6>Браслет Blinky</h6>
+
+											<div class="rs-product-slider__prices">
+												<div class="rs-product-slider__price rs-product-slider__price-actual">
+													9 275 ₽
+												</div>
+												<div class="rs-product-slider__price rs-product-slider__price-old">
+													15 000 ₽
+												</div>
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+
+							<div class="rs-product-slider__slide swiper-slide">
+								<div class="rs-product-slider__item">
+									<a href="#" class="rs-product-slider__link">
+										<div class="rs-product-slider__picture">
+											<div class="rs-product-slider__label">Sale 71 %</div>
+											<div class="rs-product-slider__img">
+												<img src="./img/blocks/product/kt_2.jpg" alt="">
+												<img src="./img/blocks/product/kt_2_hover.jpg" alt="">
+											</div>
+										</div>
+										<div class="rs-product-slider__desc">
+											<span>Коллекция Classy</span>
+											<h6>Кольцо Perfection</h6>
+
+											<div class="rs-product-slider__prices">
+												<div class="rs-product-slider__price rs-product-slider__price-actual">
+													4 305 ₽
+												</div>
+												<div class="rs-product-slider__price rs-product-slider__price-old">
+													15 000 ₽
+												</div>
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+
+							<div class="rs-product-slider__slide swiper-slide">
+								<div class="rs-product-slider__item">
+									<a href="#" class="rs-product-slider__link">
+										<div class="rs-product-slider__picture">
+											<div class="rs-product-slider__label">Sale 39 %</div>
+											<div class="rs-product-slider__img">
+												<img src="./img/blocks/product/kt_3.jpg" alt="">
+												<img src="./img/blocks/product/kt_3_hover.jpg" alt="">
+											</div>
+										</div>
+										<div class="rs-product-slider__desc">
+											<span>Коллекция Classy</span>
+											<h6>Колье Cross</h6>
+
+											<div class="rs-product-slider__prices">
+												<div class="rs-product-slider__price rs-product-slider__price-actual">
+													9 150 ₽
+												</div>
+												<div class="rs-product-slider__price rs-product-slider__price-old">
+													15 000 ₽
+												</div>
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+
+							<div class="rs-product-slider__slide swiper-slide">
+								<div class="rs-product-slider__item">
+									<a href="#" class="rs-product-slider__link">
+										<div class="rs-product-slider__picture">
+											<div class="rs-product-slider__label">Sale 80%</div>
+											<div class="rs-product-slider__img">
+												<img src="./img/blocks/product/kt_4.jpg" alt="">
+												<img src="./img/blocks/product/kt_4_hover.jpg" alt="">
+											</div>
+										</div>
+										<div class="rs-product-slider__desc">
+											<span>Коллекция Classy</span>
+											<h6>Cерьги Creman</h6>
+
+											<div class="rs-product-slider__prices">
+												<div class="rs-product-slider__price rs-product-slider__price-actual">
+													2 940 ₽
+												</div>
+												<div class="rs-product-slider__price rs-product-slider__price-old">
+													15 000 ₽
+												</div>
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+
+							<div class="rs-product-slider__slide swiper-slide">
+								<div class="rs-product-slider__item">
+									<a href="#" class="rs-product-slider__link">
+										<div class="rs-product-slider__picture">
+											<div class="rs-product-slider__label">Sale 38%</div>
+											<div class="rs-product-slider__img">
+												<img src="./img/blocks/product/kt_1.jpg" alt="">
+												<img src="./img/blocks/product/kt_1_hover.jpg" alt="">
+											</div>
+										</div>
+										<div class="rs-product-slider__desc">
+											<span>Коллекция Classy</span>
+											<h6>Браслет Blinky</h6>
+
+											<div class="rs-product-slider__prices">
+												<div class="rs-product-slider__price rs-product-slider__price-actual">
+													9 275 ₽
+												</div>
+												<div class="rs-product-slider__price rs-product-slider__price-old">
+													15 000 ₽
+												</div>
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+
+							<div class="rs-product-slider__slide swiper-slide">
+								<div class="rs-product-slider__item">
+									<a href="#" class="rs-product-slider__link">
+										<div class="rs-product-slider__picture">
+											<div class="rs-product-slider__label">Sale 71 %</div>
+											<div class="rs-product-slider__img">
+												<img src="./img/blocks/product/kt_2.jpg" alt="">
+												<img src="./img/blocks/product/kt_2_hover.jpg" alt="">
+											</div>
+										</div>
+										<div class="rs-product-slider__desc">
+											<span>Коллекция Classy</span>
+											<h6>Кольцо Perfection</h6>
+
+											<div class="rs-product-slider__prices">
+												<div class="rs-product-slider__price rs-product-slider__price-actual">
+													4 305 ₽
+												</div>
+												<div class="rs-product-slider__price rs-product-slider__price-old">
+													15 000 ₽
+												</div>
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+
+							<div class="rs-product-slider__slide swiper-slide">
+								<div class="rs-product-slider__item">
+									<a href="#" class="rs-product-slider__link">
+										<div class="rs-product-slider__picture">
+											<div class="rs-product-slider__label">Sale 39 %</div>
+											<div class="rs-product-slider__img">
+												<img src="./img/blocks/product/kt_3.jpg" alt="">
+												<img src="./img/blocks/product/kt_3_hover.jpg" alt="">
+											</div>
+										</div>
+										<div class="rs-product-slider__desc">
+											<span>Коллекция Classy</span>
+											<h6>Колье Cross</h6>
+
+											<div class="rs-product-slider__prices">
+												<div class="rs-product-slider__price rs-product-slider__price-actual">
+													9 150 ₽
+												</div>
+												<div class="rs-product-slider__price rs-product-slider__price-old">
+													15 000 ₽
+												</div>
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+
+							<div class="rs-product-slider__slide swiper-slide">
+								<div class="rs-product-slider__item">
+									<a href="#" class="rs-product-slider__link">
+										<div class="rs-product-slider__picture">
+											<div class="rs-product-slider__label">Sale 80%</div>
+											<div class="rs-product-slider__img">
+												<img src="./img/blocks/product/kt_4.jpg" alt="">
+												<img src="./img/blocks/product/kt_4_hover.jpg" alt="">
+											</div>
+										</div>
+										<div class="rs-product-slider__desc">
+											<span>Коллекция Classy</span>
+											<h6>Cерьги Creman</h6>
+
+											<div class="rs-product-slider__prices">
+												<div class="rs-product-slider__price rs-product-slider__price-actual">
+													2 940 ₽
+												</div>
+												<div class="rs-product-slider__price rs-product-slider__price-old">
+													15 000 ₽
+												</div>
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="rs-product-slider__pagination swiper-pagination"></div>
+					</div>
+				</div>
+			</section>
+
+			<link rel="stylesheet" href="css/rs-text-block.css">
+			<section class="rs-text-block border-top">
+				<div class="rs-text-block__container">
+					<div class="rs-text-block__wrapper">
+						<div class="rs-text-block__img">
+							<img data-aos="zoom-out" data-aos-delay="300"
+								src="./img/blocks/text-block/text-block_img-1.jpg" alt="">
+						</div>
+						<div class="rs-text-block__text" data-aos="fade-left" data-aos-delay="100">
+							<h2>Изысканная и стильная бижутерия Buro 13</h2>
+							<p>Уверены, вы останетесь довольны своим выбором!</p>
+							<p>Мы рады предложить вам широкий ассортимент стильной и утончённой бижутерии, которая
+								удовлетворит даже самых требовательных клиентов. Все изделия выполнены из
+								высококачественных материалов и отличаются оригинальным дизайном, способным стать
+								вдохновением на создание новых идей для неординарных образов и сделать ваши выходы более
+								эффектными, будь то встреча с подругами или дефиле на подиуме. Они станут прекрасным
+								дополнением вашему стилю и подчеркнут вашу индивидуальность.</p>
+							<p>Благодаря регулярному пополнению ассортимента в Buro 13, мы можем удовлетворить запросы
+								самых искушённых покупателей. В нашей коллекции всегда найдётся что-то новое и необычное
+								для вас и воплощения ваших задумок.</p>
+
+							<div class="rs-text-block__footer">
+								<p>Если вы хотите приобрести бижутерию для себя или в подарок своим близким, то
+									обязательно загляните к нам.</p>
+								<a href="#" class="rs-btn _btn-primary">посмотреть все коллекции</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</main>
+
+		<link rel="stylesheet" href="css/rs-footer.css" />
+		<footer>
+			<div class="rs-footer">
+				<div class="rs-footer__container">
+					<div class="rs-footer__wrapper">
+						<div class="rs-footer__top">
+							<h4>Нужна консультация? Напишите нам!</h4>
+
+							<div class="rs-footer__form">
+								<form action="#" class="form">
+									<div class="form__block">
+										<div class="form__row">
+											<div class="form__line">
+												<input type="text" autocomplete="off" name="form[]" required
+													placeholder="Ваше имя" class="rs-input">
+											</div>
+											<div class="form__line">
+												<input type="email" autocomplete="off" name="form[]" required
+													placeholder="E-mail" class="rs-input">
+											</div>
+											<div class="form__line">
+												<input type="tel" autocomplete="off" name="form[]" required
+													placeholder="Телефон" class="rs-input">
+											</div>
+											<div class="form__line">
+												<textarea autocomplete="off" name="form[]" placeholder="Ваше сообщение"
+													class="rs-input"></textarea>
+											</div>
+											<div class="form__button">
+												<button type="submit" class="rs-btn _btn-white">
+													<svg width="34" height="34" viewBox="0 0 34 34" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<path d="M15 13L18.956 16.956L15 20.9121" stroke="white"
+															stroke-width="0.989011" stroke-linecap="round"
+															stroke-linejoin="round" />
+													</svg>
+													<span>отправить</span>
+												</button>
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+
+						<div class="rs-footer__middle">
+							<div class="rs-footer__spollers">
+								<div class="rs-footer__spollers_item">
+									<h6 class="rs-footer__spollers_title">о компании</h6>
+									<div class="rs-footer__spollers_body">
+										<p>Buro 13 – онлайн-магазин с разнообразным ассортиментом стильной и элегантной
+											бижутерии, которая придётся по вкусу даже самым требовательным покупателям.
+										</p>
+									</div>
+								</div>
+
+								<div class="rs-footer__spollers_item">
+									<h6 class="rs-footer__spollers_title">контактная информация </h6>
+									<div class="rs-footer__spollers_body">
+										<ul>
+											<li><a href="tel:70000000000">+7 (000) 000-00-00</a></li>
+											<li><a href="mailto:mail@mail.ru">mail@mail.ru</a></li>
+											<li><a href="#">WhatsApp</a></li>
+											<li><a href="#">Telegram</a></li>
+											<li><a href="#">Instagram</a></li>
+										</ul>
+									</div>
+								</div>
+
+								<div class="rs-footer__spollers_item">
+									<h6 class="rs-footer__spollers_title">Каталог украшений</h6>
+									<div class="rs-footer__spollers_body">
+										<ul>
+											<li><a href="#">Серьги</a></li>
+											<li><a href="#">Подвески</a></li>
+											<li><a href="#">Кольца</a></li>
+											<li><a href="#">Браслеты</a></li>
+											<li><a href="#">Броши</a></li>
+											<li><a href="#">Чокеры</a></li>
+											<li><a href="#">Каффы / клипсы</a></li>
+											<li><a href="#">Заколки</a></li>
+											<li><a href="#">Эксклюзив</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="rs-footer__bottom">
+							<div class="rs-footer__copyright">
+								© Buro 13 2024. Все права защищены.
+							</div>
+							<div class="rs-footer__dev">
+								<a href="#">Разработано в Россайт</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<script src="js/rs-sliders-init.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>AOS.init({ duration: 500, easing: "ease-out-quart", once: true });</script>
+	<script src="js/rs-script.js"></script>
+
+</body>
+
+</html>
