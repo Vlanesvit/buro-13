@@ -218,27 +218,39 @@ pageNavigation();
 Header при скролле
 ==================================== */
 function headerScroll() {
-	const header = document.querySelector('.rs-header');
-	const headerTag = document.querySelector('header');
-
-	function headerClassAdd() {
-		// 0 - на сколько скролим, чтобы дался класс
-		header.classList.toggle('_header-scroll', window.scrollY > 0);
-	}
-
-	window.addEventListener('scroll', function () {
-		headerClassAdd()
-	})
-
-	window.addEventListener('load', function () {
-		headerClassAdd()
-		headerTag.style.height = header.clientHeight + 'px';
-	})
-
-	window.addEventListener('resize', function () {
-		headerClassAdd()
-		headerTag.style.height = header.clientHeight + 'px';
-	})
+	const headerAll = document.querySelectorAll('.rs-header');
+	headerAll.forEach(header => {
+		const headerShow = header.hasAttribute('data-scroll-show');
+		const headerShowTimer = header.dataset.scrollShow ? header.dataset.scrollShow : 500;
+		const startPoint = header.dataset.scroll ? header.dataset.scroll : 1;
+		let scrollDirection = 0;
+		// let timer;
+		document.addEventListener("windowScroll", function (e) {
+			const scrollTop = window.scrollY;
+			// clearTimeout(timer);
+			if (scrollTop >= startPoint) {
+				!header.classList.contains('_header-scroll') ? header.classList.add('_header-scroll') : null;
+				if (headerShow) {
+					if (scrollTop > scrollDirection) {
+						// downscroll code
+						header.classList.contains('_header-show') ? header.classList.remove('_header-show') : null;
+					} else {
+						// upscroll code
+						!header.classList.contains('_header-show') ? header.classList.add('_header-show') : null;
+					}
+					// timer = setTimeout(() => {
+					// 	!header.classList.contains('_header-show') ? header.classList.add('_header-show') : null;
+					// }, headerShowTimer);
+				}
+			} else {
+				header.classList.contains('_header-scroll') ? header.classList.remove('_header-scroll') : null;
+				if (headerShow) {
+					header.classList.contains('_header-show') ? header.classList.remove('_header-show') : null;
+				}
+			}
+			scrollDirection = scrollTop <= 0 ? 0 : scrollTop;
+		});
+	});
 }
 headerScroll()
 

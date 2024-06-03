@@ -106,6 +106,17 @@ function uniqArray(array) {
 	});
 }
 
+// При подключении модуля обработчик события запустится автоматически
+let addWindowScrollEvent = true;
+setTimeout(() => {
+	if (addWindowScrollEvent) {
+		let windowScroll = new Event("windowScroll");
+		window.addEventListener("scroll", function (e) {
+			document.dispatchEvent(windowScroll);
+		});
+	}
+}, 0);
+
 //========================================================================================================================================================
 // Вспомогательные модули блокировки прокрутки
 let bodyLockStatus = true;

@@ -1,7 +1,7 @@
 .rs-parallax {
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   background-attachment: fixed;
   height: 714px;
   max-width: calc(100% - 50px);

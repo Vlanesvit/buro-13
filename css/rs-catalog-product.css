@@ -1,8 +1,3 @@
-@media (max-width: 991.98px) {
-  .rs-catalog-product {
-    overflow: hidden;
-  }
-}
 @media (min-width: 1439.98px) {
   .rs-catalog-product {
     margin-bottom: 102px;

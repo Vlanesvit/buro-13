@@ -6,9 +6,18 @@
 	left: 0;
 	top: 0;
 	background-color: #fff;
+	transition: top 0.6s cubic-bezier(0.77, 0, 0.175, 1) 0s;
 
 	@media (max-width: 991.98px) {
 		padding: 5px 0px;
+	}
+
+	&._header-scroll {
+		top: -500px;
+	}
+
+	&._header-scroll._header-show {
+		top: -0px;
 	}
 
 	// .rs-header__container
